@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, input, textarea, button {
+  font-family: 'Mulish', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+  --fc-primary: hsla(320, 69%, 42%, 1);
+  --fc-secondary: hsla(244, 38%, 28%, 1);
+}
+
+
+
+header, .astronaut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--fc-primary);
+
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+header h3 {
+  color: var(--fc-secondary);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin-bottom: 3.5rem;
+}
+
+header .button-down {
+  width: 5.8rem;
+  height: 10.5rem;
+  border: 4px solid hsla(320, 69%, 42%, 1);
+  border-radius: 76rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 9.3rem;
+  transition: filter 300ms;
+}
+
+header .button-down:hover {
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+
+#main {
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  min-width: 43rem;
+  min-height: 113rem;
+  
+}
+
+.banners {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 5rem;
+
+  margin: 5.2rem auto 5.2rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.6rem;
+  gap: 3.3rem;
+  align-self: stretch;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 2rem;
+  background: #FFF;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  box-sizing: content-box;
+
+  width: 26rem;
+  height: auto;
+}
+
+.description h2 {
+  color: var(--fc-primary);
+  
+  font-size: 2.9rem;
+  font-weight: 900;
+}
+
+.description p {
+  color: var(--fc-secondary);
+  
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 4.3rem;
+  gap: 2.4rem;
+  
+  min-width: 43rem;
+  min-height: 56rem;
+}
+
+legend {
+  color: var(--fc-primary);
+  
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-top: 7.8rem;
+  margin-bottom: 4.3rem;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  min-width: 35rem;
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  
+  border-radius: 1.6rem;
+  border: 1.5px solid #312D64;
+}
+
+textarea {
+  width: 35rem;
+  height: 12rem;
+  padding: 1.2rem 1.6rem 1.2rem 1.6rem;
+  
+  border-radius: 1.6rem;
+  border: 1.5px solid #312D64;
+}
+
+input, textarea, input::placeholder, textarea::placeholder {
+  color: #312D64;
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+input::placeholder {
+  padding-left: 3rem;
+}
+
+#name {
+  background: url(./assets/person.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#mail {
+  background: url(./assets/mail.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+#my-form button {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 2.4rem;
+  margin-bottom: 6.5rem;
+  height: 4.5rem;
+  padding: 1.6rem;
+
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  border-radius: 1.6rem;
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+#my-form button:hover {
+  background: linear-gradient(96deg, #4845ae 0%, #464186 99.68%);
+  cursor: pointer;
+}
+
+footer {
+  min-width: 43rem;
+  min-height: 7.8rem;
+
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+footer p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 600;
+  
+  width: 100%;
+  height: 7.8rem;
+  
+  color: #FFF;
+}
+
+
+@media (min-width: 1440px) {
+  header h1 {
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+    margin: 0 0 0.8rem;
+  }
+  
+  #hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.9rem 10.3rem 10.9rem;
+    max-height: 83.6rem;
+  }
+
+  header {
+    order: 1;
+    margin-top: 31.2rem;
+  }
+
+  .astronaut {
+    order: 2;
+    width: 72rem;
+    height: 73rem;
+  }
+
+  header h3 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 17.9rem;
+  }
+
+  header .button-down {
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  #main {
+    min-width: 144rem;
+    min-height: 57rem;
+    padding: 6.4rem 11rem;
+  }
+  
+  .banners {
+    display: flex;
+    flex-direction: row;
+ }
+
+ #desk-stars {
+  display: flex;
+  align-items: center;
+  gap: 9.2rem;
+  padding: 0;
+  height: 62.2rem;
+  margin: 0 auto;
+  background: url(./assets/stars.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#my-form {
+  flex: 1;
+  margin-left: 10.9rem;
+}
+
+#desk-stars .stars {
+  flex: 1;
+}
+
+}
